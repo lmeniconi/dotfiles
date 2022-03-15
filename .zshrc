@@ -103,5 +103,6 @@ alias ls="ls -la"
 alias setclip="xclip -selection c"
 alias getclip="xclip -selection c -o"
 alias cat="bat"
+alias vim="nvim"
 
 export COMPOSE_FILE=local.yml
