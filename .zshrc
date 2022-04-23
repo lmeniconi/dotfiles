@@ -70,7 +70,7 @@ ZSH_THEME="lambda"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions)
+plugins=(git sudo zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -105,4 +105,23 @@ alias getclip="xclip -selection c -o"
 alias cat="bat"
 alias vim="nvim"
 
+# Globals
 export COMPOSE_FILE=local.yml
+export CHROME_EXECUTABLE='/bin/google-chrome-stable'
+
+# PATH
+# ANDROID STUDIO
+export ANDROID_HOME=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+# JAVA
+export JAVA_HOME=$HOME/soft/java
+export PATH=$PATH:$JAVA_HOME/bin
+# GO
+export GOPATH=/usr/local/go
+# RUBY
+export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
+export PATH="$PATH:$GEM_HOME/bin"
+
+# Scripts
+. /etc/profile.d/vte.sh
