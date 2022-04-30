@@ -104,6 +104,7 @@ alias setclip="xclip -selection c"
 alias getclip="xclip -selection c -o"
 alias cat="bat"
 alias vim="nvim"
+alias kssh="kitty +kitten ssh"
 
 # Globals
 export COMPOSE_FILE=local.yml
