@@ -125,3 +125,4 @@ export PATH="$PATH:$GEM_HOME/bin"
 
 # Scripts
 . /etc/profile.d/vte.sh
+export PATH=$PATH:$HOME/scripts
